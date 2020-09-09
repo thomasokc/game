@@ -1,1 +1,1 @@
-# game
+This is my attempt at the infamous game, "Rock, Paper, Scissors"
