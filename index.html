@@ -1,0 +1,13 @@
+<script>
+    let computerPlay = ['rock', 'paper', 'scissors']
+
+    var answer = prompt("Rock, Paper, Scissors?")
+
+    var randomItem = computerPlay[Math.floor(Math.random()*computerPlay.length)];
+
+    if (answer !== randomItem) {
+        alert("You lose!");
+    } else {
+        alert("You win!")
+    }
+</script>
