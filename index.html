@@ -1,13 +1,29 @@
 <script>
     let computerPlay = ['rock', 'paper', 'scissors']
 
-    var answer = prompt("Rock, Paper, Scissors?")
-
+    for (let i = 0; i < 5; i ++) {
     var randomItem = computerPlay[Math.floor(Math.random()*computerPlay.length)];
-
-    if (answer !== randomItem) {
-        alert("You lose!");
-    } else {
-        alert("You win!")
+    var answer = prompt("Rock, Paper, Scissors?")
+    if (answer == "rock" && randomItem == "rock") {
+        alert("Tie, Computer chose rock!"); 
+    } else if(answer == "paper" && randomItem == "paper"){
+        alert("Tie, Computer chose paper!"); 
+    } else if(answer == "scissors" && randomItem == "scissors"){
+        alert("Tie, Computer chose scissors!");
+    } else if(answer == "rock" && randomItem == "paper"){
+        alert("You lose, Computer chose paper!");
+    } else if(answer == "paper" && randomItem == "scissors"){
+        alert("You lose, Computer chose scissors!")
+    } else if(answer == "scissors" && randomItem == "rock"){
+        alert("You lose, Computer chose rock!");
+    } else if(answer == "rock" && randomItem == "scissors"){
+        alert("You win, Computer chose scissors!");
+    } else if(answer == "scissors" && randomItem == "paper"){
+        alert("You win, Computer chose paper!");
+    } else if(answer == "paper" && randomItem == "rock"){
+        alert("You win, Computer chose rock!");
+    } else{
+        alert("Please type rock, paper, or scissors.");
+    }
     }
 </script>
